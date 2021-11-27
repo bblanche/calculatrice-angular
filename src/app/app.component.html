@@ -1,0 +1,80 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.component.css"/>
+    <title>Calculatrice Tonleu Brenda</title>
+</head>
+<body>
+  <table>
+        <caption>MA CALCULATRICE</caption>
+        
+        <tr>
+            <td colspan="4">
+              
+                <div class="maindisplay">
+                  <div class="subdisplay">{{ input }}</div>
+                  {{ result }}
+                </div>
+                <!--input class="afficheur" type="text" name="afficheur" id="afficheur" placeholder="Calculez... " maxlength="25" [value]="currentNumber" disabled/>
+                 <div class="subdisplay">{{ subDisplayText }}</div>
+              {{ mainDisplayText }}</td-->
+              
+        <tr>
+            <td colspan="3"><input class="fin" type="button" (click)="allClear()" name="on" value="ON" /></td>
+            <td><input class="fin" type="button" name="OFF" value="OFF"/></td>
+        </tr>
+        <tr>
+            <td><input class="fin" type="button" (click)="allClear()" name="C" value="C" /></td>
+            <td><input type="button" (click)="pressNum('(')" name="parantheseouvert" value="(" /></td>
+            <td><input type="button" (click)="pressNum(')')" name="paranthesefermé" value=")"/></td>
+            <td><input class="fin" type="button"  name="supprimer" value="Del"/></td>
+            
+        </tr>
+        <tr>
+            <td><input class="fonction" type="button"  name="ln" value="ln"/></td>
+            <td><input class="fonction" type="button" name="puissance" value="x^y"/></td>
+            <td><input class="fonction" type="button"  name="pourcentage" value="%"/></td>
+            <td><input class="operation" type="button" (click)="pressOperator('/')" name="diviser" value="/"/></td>
+        </tr>
+        <tr>
+            <td><input class="nombre" type="button" (click)="pressNum('7')" name="7" value="7" /></td>
+            <td><input class="nombre" type="button" (click)="pressNum('8')" name="8" value="8"/></td>
+            <td><input class="nombre" type="button" (click)="pressNum('9')" name="9" value="9"/></td>
+            <td><input class="operation" type="button" (click)="pressOperator('*')" name="fois" value="X"/></td>
+        </tr>
+        <tr>
+            <td><input class="nombre" type="button" (click)="pressNum('4')" name="4" value="4" /></td>
+            <td><input class="nombre" type="button" (click)="pressNum('5')" name="5" value="5"/></td>
+            <td><input class="nombre" type="button" (click)="pressNum('6')" name="6" value="6"/></td>
+            <td><input class="operation" type="button" (click)="pressOperator('-')" name="moins" value="-"/></td>
+        </tr>
+        <tr>
+            <td><input class="nombre" type="button" (click)="pressNum('1')" name="1" value="1" /></td>
+            <td><input class="nombre" type="button" (click)="pressNum('2')" name="2" value="2"/></td>
+            <td><input class="nombre" type="button" (click)="pressNum('3')" name="3" value="3"/></td>
+            <td><input class="operation" type="button" (click)="pressOperator('+')" name="plus" value="+"/></td>
+        </tr>
+        <tr>
+            <td><input class="fonction" type="button"  name="virgule" value="." /></td>
+            <td><input class="nombre" type="button" (click)="pressNum('0')" name="0" value="0"/></td>
+            <td><input class="fonction" type="button" (click)="pressNum('3.14')" name="pi" value="pi"/></td>
+            <td><input class="fin" type="button" (click)="getAnswer()"name="egal" value="="/></td>
+        </tr>
+        
+  </table>
+
+    <span id="responsable"> ___by TONLEU Blanche__</span>
+  </body>
+</html>
+

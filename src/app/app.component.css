@@ -1,0 +1,97 @@
+input
+{
+display:inline-block;
+vertical-align:middle;
+text-align:center;
+cursor:pointer;
+margin:5px;
+text-decoration:none;
+border:#000 1px solid;
+height:40px;
+padding:8px 16px;
+border-radius:10px;
+width:130px;
+
+}
+
+.afficheur
+{
+width:92%;
+height:80px;
+color: white;
+font-size: xx-large;
+
+
+}
+
+input[type="button"]:hover 
+{ 
+background: yellow; 
+}
+
+input[type="button"]:active
+{
+color: red;
+}
+table
+{
+border-width:4px;
+border-style:solid;
+border-radius:10px;
+border-color:rgba(173, 170, 170, 0.233);
+background-color: rgb(38, 41, 41);
+}
+
+.nombre
+{
+background-color: blueviolet;
+}
+
+.operation
+{
+background-color:orange;
+}
+
+.fin
+{
+background-color:rgb(247, 27, 11);
+}
+
+.fonction
+{
+background-color:rgb(11, 180, 247);
+}
+
+input[name*="paranthese"]
+{ 
+background-color: rgb(202, 13, 219); 
+}
+
+caption
+{
+font-size:3em ;
+color: blueviolet;
+}
+
+#responsable
+{
+font-size:0.5em ;
+}
+
+.maindisplay {
+    background: rgba(255, 255, 255, 0.664);
+    height: 25vh;
+    padding: 5% !important;
+    font-size: 4rem;
+    text-align: right;
+    font-family: Courier, monospace;
+    overflow: auto;
+    border-radius:10px;
+}
+
+.subdisplay {
+    border-bottom: 1px solid black;
+    height: 25%;
+    font-size: 2rem;
+    overflow: auto;
+}
